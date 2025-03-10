@@ -235,6 +235,7 @@ body {
     flex: 1;
     padding: 1rem;
     overflow-y: auto;
+    scrollbar-width: none;
     height: 100%;
     padding-top: 2rem;
     margin-top: 5rem;

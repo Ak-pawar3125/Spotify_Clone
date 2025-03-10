@@ -2,7 +2,7 @@
 
 Overview<br>
 
-This project is a clone of Spotify's homepage, designed to replicate its UI and provide a similar user experience. The project aims to practice front- end development skills using modern web technologies.
+This project is a clone of Spotify's homepage, designed to replicate its UI and provide a similar user experience. The project aims to practice front-end development skills using modern web technologies.
 <br>
 
 # Features
@@ -19,3 +19,6 @@ This project is a clone of Spotify's homepage, designed to replicate its UI and 
 - HTML<br>
 - CSS<br>
 - JavaScript
+
+
+![alt text](image.png) ![alt text](image-1.png) ![alt text](image-2.png)
