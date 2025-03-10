@@ -1,0 +1,701 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000;
+    width: 100%;
+    height: 4rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.i1 i {
+    font-size: 2.4rem;
+}
+
+.i2 {
+    height: 3rem;
+    width: 3rem;
+    background-color: #232323;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i2 i {
+    font-size: 1.5rem;
+}
+
+.i2:hover {
+    background-color: #3c3c3c;
+}
+
+.searchbar {
+    width: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #3c3c3c;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    opacity: 0.5;
+    margin-right: 10rem;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    background-color: #3c3c3c;
+    opacity: 1;
+    font-size: 1rem;
+    padding-right: 10rem;
+    width: auto;
+}
+.search-sec1, .search-sec2{
+    display: flex;
+}
+.search-sec1 i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.searchbar input::placeholder {
+    color: #ffffff;
+}
+
+.vertical-line {
+    font-size: 1.5rem;
+    position: absolute;
+    top: -1;
+}
+
+.mysvg {
+    height: 1.5rem;
+    width: 4rem;
+    fill: #ffffff;
+    opacity: 1;
+    margin-top: 0.3rem;
+}
+
+.nav-options a {
+    font-weight: 600;
+    opacity: 0.7;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.nav-options a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 550;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.dark-badge {
+    background-color: #000;
+    color: #fff;
+    height: 2.5rem;
+    opacity: 0.7;
+}
+
+.loginSignup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.loginSignup a {
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: small;
+    margin-right: 1rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.loginSignup a:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Main Content Styles */
+.main {
+    display: flex;
+    padding: 0.5rem;
+    height: calc(100vh - 4rem);
+    overflow: hidden;
+    background-color: #000;
+}
+
+.sidebar {
+    background-color: #000;
+    width: 23rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    border-radius: 2rem;
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    height: 100%;
+    padding-top: 2rem;
+    margin-top: 5rem;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+.main-content .heading {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-options img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #1d1d1d;
+    height: 7rem;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.box-p2 {
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.TC {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.TC a {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.cookies {
+    margin-top: 1rem;
+}
+
+.cookies a {
+    font-size: 0.8rem;
+}
+
+.cookies a:hover {
+    text-decoration: 1.5px solid underline;
+}
+
+.languages {
+    margin: 2rem 0;
+    height: 2rem;
+    width: 8rem;
+    border: 1px solid #3c3c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-weight: 600;
+    padding: 0.2rem 0;
+    gap: 0.2rem;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.languages:hover {
+    transform: scale(1.1);
+    background-color: #1d1d1d;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1 a {
+    opacity: 0.7;
+}
+
+.artists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.artists, .albums{
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.artist, .album{
+    position: relative;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.artist, .album img,
+.artist, .album p,
+.artist, .album a {
+    position: relative;
+    z-index: 1;
+}
+.artist:hover {
+    background-color: #23232380;
+}
+.album:hover {
+    background-color: #23232380;
+}
+.play-svg {
+    z-index: 2;
+    position: absolute;
+    bottom: 30%;
+    left: 70%;
+    transform: translate(-50%, 50%);
+    width: 2rem;
+    height: 2rem;
+    fill: #000;
+    background-color: #1db954;
+    border-radius: 50%;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.artist:hover .play-svg{
+    opacity: 1;
+    transform: translate(-50%, 0%) scale(1.1);
+}
+.album:hover .play-svg{
+    opacity: 1;
+    transform: translate(-50%, 0%) scale(1.1);
+}
+
+.artist img {
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+}
+
+.p2 {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.albums {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.albums-sec {
+    margin-top: 4rem;
+}
+
+.album img {
+    height: 9rem;
+    width: 9rem;
+    margin-bottom: 0.8rem;
+    border-radius: 1rem;
+}
+
+.foot1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin: 5rem 0 5rem 0;
+}
+
+.foot1 ul li {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.foot1 ul li a {
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+.foot1 ul li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.line {
+    opacity: 0.1;
+    font-size: 1px;
+}
+
+.foot2 {
+    opacity: 0.7;
+    margin: 2rem 0 10rem 0;
+}
+
+.foot1 .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social .icon {
+    background-color: #232323;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.social .icon:hover {
+    background-color: #676666;
+}
+
+
+.music-player {
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30rem;
+    background: linear-gradient(to right, #A82F9C, #9B3FA9, #9349B1, #8758BE, #766CCE, #6F75D5, #697CDB, #5C8CE9);
+}
+.music-player p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.music-player .badge{
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 1rem
+}
+.small-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+.nav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.nav1 p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.small-foot{
+    display: none;
+}
+
+@media (max-width: 320px) {
+    .nav1 p{
+        font-size: 1rem;
+    }
+    .nav1 i{
+        font-size: 1.3rem;
+    }
+    .cookies{
+        display: none;
+    }
+    .small-nav{
+        padding-top: 1rem;
+    }
+    .small-foot{
+        padding-bottom: 1rem;
+    }
+
+}
+@media (max-width: 480px) {
+    .small-nav{
+        display: flex;
+        padding: 1rem;
+    }
+    .navbar{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-content{
+        margin-top: 0;
+    }
+    .main-content, .artist img, .albums img{
+        border-radius: 0;
+    }
+    .artists, .albums{
+        gap: 0;
+    }
+    .sec1 .heading{
+        font-size: 1.2rem;
+    }
+    .foot1{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .foot2{
+        display: none;
+    }
+    .music-player{
+        display: none;
+    }
+    .small-foot{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .small-foot .TC{
+        margin-top: 2rem;
+    }
+    .cookies{
+       display: none;
+    }
+    .languages{
+        margin-bottom: 2rem;
+    }
+    .small-foot{
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .small-nav{
+        display: flex;
+        padding: 1rem;
+    }
+    .main-content{
+        margin-top: 0;
+    }
+    .navbar{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-content, .artist img, .albums img{
+        border-radius: 0;
+    }
+    .artists, .albums{
+        gap: 0;
+    }
+    .sec1 .heading{
+        font-size: 1.2rem;
+    }
+    .foot1{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .foot2{
+        display: none;
+    }
+    .music-player{
+        display: none;
+    }
+    .small-foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+    .small-foot .TC{
+        margin-top: 2rem;
+        margin-right: 12rem;
+    }
+    .cookies{
+        display: none;
+    }
+    .languages{
+        margin-bottom: 2rem;
+    }
+    .small-foot .language{
+        height: 2rem;
+        width: 5rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .small-nav{
+        display: flex;
+        padding: 1rem;
+    }
+    .main-content{
+        margin-top: 0;
+    }
+    .small-nav .nav2{
+        gap: 2rem;
+        font-size: 2rem;
+    }
+    .small-nav .badge{
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    
+    .artists, .albums{
+        gap: 0;
+    }
+    .sec1 .heading{
+        font-size: 1.2rem;
+    }
+    .small-foot{
+        display: none;
+    }
+    .music-player{
+        gap: 10rem;
+    }
+    .music-player .info p{
+        font-size: 0.8rem;
+    }
+    .music-player .info {
+        text-align: start;
+    }
+    .signup{
+        margin-right: 2rem;
+    }
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1254px) {
+    .navbar .nav-options{
+        display: none;
+    }
+    .navbar .line{
+        display: none;
+    }
+    .searchbar{
+        margin-right: 5rem;
+    }
+    .music-player{
+        gap: 5rem;
+    }
+}
+@media (min-width : 1255px) and (max-width: 1440px) {
+    .searchbar{
+        margin-right: 0;
+    }
+    .music-player{
+        gap: 20rem;
+    }
+}
