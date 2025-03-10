@@ -14,20 +14,57 @@ body {
     color: #fff;
     overflow: hidden;
 }
-
+.menu{
+    position: relative;
+    display: inline-block;
+    display: none;
+}
+.menu.active{
+    display: flex;
+}
+.dropdown-menu{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100vh;
+    width: 100%;
+    background-color : #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.menu a, .horizontal-line{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 3rem;
+    transition: transform 0.3s ease-in-out;
+}
+.menu a:hover{
+    transform: scale(1.1);
+}
+.dropdown-menu .cross{
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
 /* Navbar Styles */
 .navbar {
     background-color: #000;
     width: 100%;
-    height: 4rem;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 3rem;
     position: fixed;
     top: 0;
     gap: 1rem;
-    padding: 0.5rem;
+    padding-top: 1rem;
 }
 
 .icon {
