@@ -20,5 +20,10 @@ This project is a clone of Spotify's homepage, designed to replicate its UI and 
 - CSS<br>
 - JavaScript
 
+# Demo line & Screenshots :
 
-![alt text](image.png) ![alt text](image-1.png) ![alt text](image-2.png)
+Visite this link : https://akankshap-spotify-home-clone.netlify.app/
+<br>
+
+Screenshots : <br>
+![alt text](./images/image.png) ![alt text](./images/image-1.png) ![alt text](./images/image-2.png)
