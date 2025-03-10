@@ -1,10 +1,10 @@
-/* Global Reset */
+/*------------------Global Reset------------*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Body Styles */
+/*-------------Body Styles---------------*/
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -14,15 +14,19 @@ body {
     color: #fff;
     overflow: hidden;
 }
-.menu{
+
+/* ---------------dropdown-menu------------- */
+.menu {
     position: relative;
     display: inline-block;
     display: none;
 }
-.menu.active{
+
+.menu.active {
     display: flex;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -30,29 +34,34 @@ body {
     gap: 1.5rem;
     height: 100vh;
     width: 100%;
-    background-color : #000;
+    background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
 }
-.menu a, .horizontal-line{
+
+.menu a,
+.horizontal-line {
     font-size: 1.5rem;
     font-weight: 600;
     padding-left: 3rem;
     transition: transform 0.3s ease-in-out;
 }
-.menu a:hover{
+
+.menu a:hover {
     transform: scale(1.1);
 }
-.dropdown-menu .cross{
+
+.dropdown-menu .cross {
     position: fixed;
     right: 2rem;
     top: 2rem;
     font-size: 2rem;
     cursor: pointer;
 }
-/* Navbar Styles */
+
+/* ---------------Navbar------------- */
 .navbar {
     background-color: #000;
     width: 100%;
@@ -118,9 +127,12 @@ body {
     padding-right: 10rem;
     width: auto;
 }
-.search-sec1, .search-sec2{
+
+.search-sec1,
+.search-sec2 {
     display: flex;
 }
+
 .search-sec1 i {
     margin-right: 1rem;
     font-size: 1.2rem;
@@ -200,7 +212,7 @@ body {
     opacity: 1;
 }
 
-/* Main Content Styles */
+/* ---------------Main------------- */
 .main {
     display: flex;
     padding: 0.5rem;
@@ -360,29 +372,40 @@ a {
     width: 100%;
     gap: 1rem;
 }
-.artists, .albums{
+
+.artists,
+.albums {
     overflow-x: auto;
     scrollbar-width: none;
 }
-.artist, .album{
+
+.artist,
+.album {
     position: relative;
     padding: 1rem;
     border-radius: 1rem;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
 }
-.artist, .album img,
-.artist, .album p,
-.artist, .album a {
+
+.artist,
+.album img,
+.artist,
+.album p,
+.artist,
+.album a {
     position: relative;
     z-index: 1;
 }
+
 .artist:hover {
     background-color: #23232380;
 }
+
 .album:hover {
     background-color: #23232380;
 }
+
 .play-svg {
     z-index: 2;
     position: absolute;
@@ -399,11 +422,12 @@ a {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.artist:hover .play-svg{
+.artist:hover .play-svg {
     opacity: 1;
     transform: translate(-50%, 0%) scale(1.1);
 }
-.album:hover .play-svg{
+
+.album:hover .play-svg {
     opacity: 1;
     transform: translate(-50%, 0%) scale(1.1);
 }
@@ -425,6 +449,7 @@ a {
     justify-content: space-between;
     align-items: start;
 }
+
 .albums-sec {
     margin-top: 4rem;
 }
@@ -436,6 +461,7 @@ a {
     border-radius: 1rem;
 }
 
+/* ---------------Footer------------- */
 .foot1 {
     display: flex;
     justify-content: space-around;
@@ -485,7 +511,7 @@ a {
     background-color: #676666;
 }
 
-
+/* ---------------Music-player------------- */
 .music-player {
     padding: 0.5rem;
     position: fixed;
@@ -499,162 +525,211 @@ a {
     gap: 30rem;
     background: linear-gradient(to right, #A82F9C, #9B3FA9, #9349B1, #8758BE, #766CCE, #6F75D5, #697CDB, #5C8CE9);
 }
-.music-player p{
+
+.music-player p {
     font-size: 1rem;
     font-weight: 600;
 }
-.music-player .badge{
+
+.music-player .badge {
     height: 2.5rem;
     width: 8rem;
     font-size: 1rem
 }
-.small-nav{
+
+.small-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     display: none;
 }
-.nav1{
+
+.nav1 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
 }
-.nav1 p{
+
+.nav1 p {
     font-size: 1.5rem;
     font-weight: 600;
 }
-.nav2{
+
+.nav2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-.small-foot{
+
+.small-foot {
     display: none;
 }
 
+/* ---------------Media queris for extra small device------------- */
 @media (max-width: 320px) {
-    .nav1 p{
+    .nav1 p {
         font-size: 1rem;
     }
-    .nav1 i{
+
+    .nav1 i {
         font-size: 1.3rem;
     }
-    .cookies{
+
+    .cookies {
         display: none;
     }
-    .small-nav{
+
+    .small-nav {
         padding-top: 1rem;
     }
-    .small-foot{
+
+    .small-foot {
         padding-bottom: 1rem;
     }
 
 }
+
+/* ---------------Media queris for small device------------- */
 @media (max-width: 480px) {
-    .small-nav{
+    .small-nav {
         display: flex;
         padding: 1rem;
     }
-    .navbar{
+
+    .navbar {
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
     }
-    .main-content{
+
+    .main-content {
         margin-top: 0;
     }
-    .main-content, .artist img, .albums img{
+
+    .main-content,
+    .artist img,
+    .albums img {
         border-radius: 0;
     }
-    .artists, .albums{
+
+    .artists,
+    .albums {
         gap: 0;
     }
-    .sec1 .heading{
+
+    .sec1 .heading {
         font-size: 1.2rem;
     }
-    .foot1{
+
+    .foot1 {
         flex-direction: column;
         gap: 2rem;
     }
-    .foot2{
+
+    .foot2 {
         display: none;
     }
-    .music-player{
+
+    .music-player {
         display: none;
     }
-    .small-foot{
+
+    .small-foot {
         display: flex;
         justify-content: center;
         align-items: start;
         flex-direction: column;
     }
-    .small-foot .TC{
+
+    .small-foot .TC {
         margin-top: 2rem;
     }
-    .cookies{
-       display: none;
+
+    .cookies {
+        display: none;
     }
-    .languages{
+
+    .languages {
         margin-bottom: 2rem;
     }
-    .small-foot{
+
+    .small-foot {
         padding-bottom: 2rem;
     }
 }
 
+/* ---------------Media queris for medium device------------- */
 @media (min-width: 480px) and (max-width: 768px) {
-    .small-nav{
+    .small-nav {
         display: flex;
         padding: 1rem;
     }
-    .main-content{
+
+    .main-content {
         margin-top: 0;
     }
-    .navbar{
+
+    .navbar {
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
     }
-    .main-content, .artist img, .albums img{
+
+    .main-content,
+    .artist img,
+    .albums img {
         border-radius: 0;
     }
-    .artists, .albums{
+
+    .artists,
+    .albums {
         gap: 0;
     }
-    .sec1 .heading{
+
+    .sec1 .heading {
         font-size: 1.2rem;
     }
-    .foot1{
+
+    .foot1 {
         flex-direction: column;
         gap: 2rem;
     }
-    .foot2{
+
+    .foot2 {
         display: none;
     }
-    .music-player{
+
+    .music-player {
         display: none;
     }
-    .small-foot{
+
+    .small-foot {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 3rem;
     }
-    .small-foot .TC{
+
+    .small-foot .TC {
         margin-top: 2rem;
         margin-right: 12rem;
     }
-    .cookies{
+
+    .cookies {
         display: none;
     }
-    .languages{
+
+    .languages {
         margin-bottom: 2rem;
     }
-    .small-foot .language{
+
+    .small-foot .language {
         height: 2rem;
         width: 5rem;
         padding: 1rem;
@@ -665,74 +740,94 @@ a {
     }
 }
 
+/* ---------------Media queris for large device------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .small-nav{
+    .small-nav {
         display: flex;
         padding: 1rem;
     }
-    .main-content{
+
+    .main-content {
         margin-top: 0;
     }
-    .small-nav .nav2{
+
+    .small-nav .nav2 {
         gap: 2rem;
         font-size: 2rem;
     }
-    .small-nav .badge{
+
+    .small-nav .badge {
         font-size: 1.2rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .navbar{
+
+    .navbar {
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
     }
-    
-    .artists, .albums{
+
+    .artists,
+    .albums {
         gap: 0;
     }
-    .sec1 .heading{
+
+    .sec1 .heading {
         font-size: 1.2rem;
     }
-    .small-foot{
+
+    .small-foot {
         display: none;
     }
-    .music-player{
+
+    .music-player {
         gap: 10rem;
     }
-    .music-player .info p{
+
+    .music-player .info p {
         font-size: 0.8rem;
     }
+
     .music-player .info {
         text-align: start;
     }
-    .signup{
+
+    .signup {
         margin-right: 2rem;
     }
-    
+
 }
 
+/* ---------------Media queris for large device------------- */
 @media (min-width: 1025px) and (max-width: 1254px) {
-    .navbar .nav-options{
+    .navbar .nav-options {
         display: none;
     }
-    .navbar .line{
+
+    .navbar .line {
         display: none;
     }
-    .searchbar{
+
+    .searchbar {
         margin-right: 5rem;
     }
-    .music-player{
+
+    .music-player {
         gap: 5rem;
     }
 }
+
+/* ---------------Media queris for extra large device------------- */
 @media (min-width : 1255px) and (max-width: 1440px) {
-    .searchbar{
+    .searchbar {
         margin-right: 0;
     }
-    .music-player{
+
+    .music-player {
         gap: 20rem;
     }
 }

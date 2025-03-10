@@ -16,6 +16,6 @@ This project is a clone of Spotify's homepage, designed to replicate its UI and 
 
 # Technologies Used
 
-<br>
-HTML<br>
-CSS (Flexbox & Grid for layout)<br>
+-HTML<br>
+-CSS<br>
+-JavaScript
