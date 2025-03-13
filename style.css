@@ -356,6 +356,13 @@ a {
     background-color: #1d1d1d;
 }
 
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .sec1 {
     display: flex;
     justify-content: space-between;
@@ -397,6 +404,10 @@ a {
 .album a {
     position: relative;
     z-index: 1;
+}
+
+.artist .p2 {
+    margin-top: 0.5rem;
 }
 
 .artist:hover {
@@ -453,6 +464,10 @@ a {
 
 .albums-sec {
     margin-top: 4rem;
+}
+
+.show-all {
+    margin-bottom: 2rem;
 }
 
 .album img {
@@ -617,6 +632,10 @@ a {
         border-radius: 0;
     }
 
+    .show-all {
+        display: none;
+    }
+
     .artists,
     .albums {
         gap: 0;
@@ -664,7 +683,7 @@ a {
 }
 
 /* ---------------Media queris for medium device------------- */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .small-nav {
         display: flex;
         padding: 1rem;
@@ -686,6 +705,10 @@ a {
     .artist img,
     .albums img {
         border-radius: 0;
+    }
+
+    .show-all {
+        display: none;
     }
 
     .artists,
@@ -777,20 +800,12 @@ a {
         gap: 0;
     }
 
-    .sec1 .heading {
-        font-size: 1.2rem;
-    }
-
     .small-foot {
         display: none;
     }
 
     .music-player {
         gap: 10rem;
-    }
-
-    .music-player .info p {
-        font-size: 0.8rem;
     }
 
     .music-player .info {
@@ -830,5 +845,17 @@ a {
 
     .music-player {
         gap: 20rem;
+    }
+
+    .lib-boxes .box{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .lib-boxes {
+        margin-bottom: 3rem;
+    }
+
+    .TC, .cookies{
+        margin-bottom: 2rem;
     }
 }
